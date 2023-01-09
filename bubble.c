@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 //Funktions-Prototypen
-void bubbleSort(int array[], int size);
+int bubbleSort(int array[], int size);
 void ergebnisAusgeben(int array[], int size);
 
 //Hauptprogramm
@@ -38,7 +38,7 @@ int main () {
 }
   
 //Funktionen
-void bubbleSort(int array[], int size) {
+int bubbleSort(int array[], int size) {
   
   //Äußere Schleife
   for(int i=0; i<size; i++) {
@@ -49,12 +49,13 @@ void bubbleSort(int array[], int size) {
       //Vergleich zwei nebeneinanderliegender Elemente
       if (array[j] > array[j+1]) {
         
-        //die gewünschte Sortierung ist hier nicht gegeben, deshalb wird getauscht
-	//temp ist eine Variable, die als kurzfristige Sicherungsmöglichkeit für den Inhalt des Arrays an der Stelle j dient
-        int temp = array[j]; 
-        array[j] = array[j+1];
-        array[j+1] = temp;
-      }
+        	//die gewünschte Sortierung ist hier nicht gegeben, deshalb wird getauscht
+		//temp ist eine Variable, die als kurzfristige Sicherungsmöglichkeit für den Inhalt des Arrays an der Stelle j dient
+       	 	int temp = array[j]; 
+        	array[j] = array[j+1];
+        	array[j+1] = temp;
+      } else
+		return 0;
     }
   }
 }
