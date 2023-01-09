@@ -19,18 +19,18 @@ int main () {
 	printf("\n ******************************* \n\n");
 	
 	//Variablendeklaration
-  int bubble[20] = { 0, 5, 4, 11, 14, 8, 5, 4, 3, 2, 48, 12, 47, 1, 66, 45, 23, 98, 13, 41};
+  	int bubble[20] = { 0, 5, 4, 11, 14, 8, 5, 4, 3, 2, 48, 12, 47, 1, 66, 45, 23, 98, 13, 41};
   
-  //Ausgabe des unsortierten Arrays zur Kontrolle
-  printf("Der Array beeinhaltet folgende Inhalte in ursprünglicher Reihenfolge: \n");
-  ergebnisAusgeben(bubble, 20);
+  	//Ausgabe des unsortierten Arrays zur Kontrolle
+ 	//printf("Der Array beeinhaltet folgende Inhalte in ursprünglicher Reihenfolge: \n");
+  	//ergebnisAusgeben(bubble, 20);
 
-  //Sortieren
-  bubbleSort(bubble, 20); 
+  	//Sortieren
+  	bubbleSort(bubble, 20); 
   
-  //Ausgabe
-  printf("Der Array beeinhaltet folgende Inhalte in aufsteigender Reihenfolge: \n");
-  ergebnisAusgeben(bubble, 20);
+  	//Ausgabe
+  	printf("Der Array beeinhaltet folgende Inhalte in aufsteigender Reihenfolge: \n");
+  	ergebnisAusgeben(bubble, 20);
 
 	//Ende
 	printf("\n\n");
@@ -50,7 +50,8 @@ void bubbleSort(int array[], int size) {
       if (array[j] > array[j+1]) {
         
         //die gewünschte Sortierung ist hier nicht gegeben, deshalb wird getauscht
-        int temp = array[j]; //temp ist eine Variable, die als kurzfristige Sicherungsmöglichkeit für den Inhalt des Arrays an der Stelle j dient
+	//temp ist eine Variable, die als kurzfristige Sicherungsmöglichkeit für den Inhalt des Arrays an der Stelle j dient
+        int temp = array[j]; 
         array[j] = array[j+1];
         array[j+1] = temp;
       }
