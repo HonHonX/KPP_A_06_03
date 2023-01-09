@@ -2,7 +2,6 @@
 
 //Funktions-Prototypen
 void bubbleSort(int array[], int size);
-void bubbleSortFlip(int array[], int size);
 void ergebnisAusgeben(int array[], int size);
 
 //Hauptprogramm
@@ -33,13 +32,6 @@ int main () {
   	printf("Der Array beeinhaltet folgende Inhalte in aufsteigender Reihenfolge: \n");
   	ergebnisAusgeben(bubble, 20);
 	
-	//Sortieren
-  	bubbleSortFlip(bubble, 20); 
-	
-	//Ausgabe
-	printf("Der Array beeinhaltet folgende Inhalte in absteigender Reihenfolge: \n");
-  	ergebnisAusgeben(bubble, 20);
-
 	//Ende
 	printf("\n\n");
 	return 0;
@@ -56,27 +48,6 @@ void bubbleSort(int array[], int size) {
       
       //Vergleich zwei nebeneinanderliegender Elemente
       if (array[j] > array[j+1]) {
-        
-        	//die gewünschte Sortierung ist hier nicht gegeben, deshalb wird getauscht
-		//temp ist eine Variable, die als kurzfristige Sicherungsmöglichkeit für den Inhalt des Arrays an der Stelle j dient
-       	 	int temp = array[j]; 
-        	array[j] = array[j+1];
-        	array[j+1] = temp;
-      } 
-    }
-  }
-}
-
-void bubbleSortFlip(int array[], int size) {
-  
-  //Äußere Schleife
-  for(int i=0; i<size; i++) {
-    
-    //innere Schleife
-    for(int j=0; j<size-i; j++) {
-      
-      //Vergleich zwei nebeneinanderliegender Elemente
-      if (array[j] < array[j+1]) {
         
         	//die gewünschte Sortierung ist hier nicht gegeben, deshalb wird getauscht
 		//temp ist eine Variable, die als kurzfristige Sicherungsmöglichkeit für den Inhalt des Arrays an der Stelle j dient
