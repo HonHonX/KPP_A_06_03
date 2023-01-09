@@ -23,14 +23,14 @@ int main () {
 	int size = sizeof(bubble)/sizeof(bubble[0]);
   
   	//Ausgabe des unsortierten Arrays zur Kontrolle
- 	printf("Der Array beeinhaltet folgende Inhalte in ursprünglicher Reihenfolge: \n");
+ 	printf("Der Array (mit %d Elementen) beeinhaltet folgende Inhalte in ursprünglicher Reihenfolge: \n", size);
   	ergebnisAusgeben(bubble, size);
 
   	//Sortieren
   	bubbleSort(bubble, size); 
   
   	//Ausgabe
-  	printf("Der Array beeinhaltet folgende Inhalte in aufsteigender Reihenfolge: \n");
+  	printf("Der Array (mit %d Elementen) beeinhaltet folgende Inhalte in aufsteigender Reihenfolge: \n", size);
   	ergebnisAusgeben(bubble, size);
 	
 	//Ende
