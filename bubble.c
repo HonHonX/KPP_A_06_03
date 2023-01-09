@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 //Funktions-Prototypen
-int bubbleSort(int array[], int size);
+void bubbleSort(int array[], int size);
 void ergebnisAusgeben(int array[], int size);
 
 //Hauptprogramm
@@ -54,8 +54,7 @@ int bubbleSort(int array[], int size) {
        	 	int temp = array[j]; 
         	array[j] = array[j+1];
         	array[j+1] = temp;
-      } else
-		return 0;
+      } 
     }
   }
 }
