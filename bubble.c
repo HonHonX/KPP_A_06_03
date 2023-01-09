@@ -19,18 +19,19 @@ int main () {
 	printf("\n ******************************* \n\n");
 	
 	//Variablendeklaration
-  	int bubble[20] = { 0, 5, 4, 11, 14, 8, 5, 4, 3, 2, 48, 12, 47, 1, 66, 45, 23, 98, 13, 41};
+  	int bubble[] = { 0, 5, 4, 11, 14, 8, 5, 4, 3, 2, 48, 12, 47, 1, 66, 45, 23, 98, 13, 41};
+	int size = sizeof(bubble)/sizeof(bubble[0]);
   
   	//Ausgabe des unsortierten Arrays zur Kontrolle
  	printf("Der Array beeinhaltet folgende Inhalte in ursprünglicher Reihenfolge: \n");
-  	ergebnisAusgeben(bubble, 20);
+  	ergebnisAusgeben(bubble, size);
 
   	//Sortieren
-  	bubbleSort(bubble, 20); 
+  	bubbleSort(bubble, size); 
   
   	//Ausgabe
   	printf("Der Array beeinhaltet folgende Inhalte in aufsteigender Reihenfolge: \n");
-  	ergebnisAusgeben(bubble, 20);
+  	ergebnisAusgeben(bubble, size);
 	
 	//Ende
 	printf("\n\n");
