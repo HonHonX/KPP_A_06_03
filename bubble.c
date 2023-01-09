@@ -2,6 +2,7 @@
 
 //Funktions-Prototypen
 void bubbleSort(int array[], int size);
+void bubbleSortFlip(int array[], int size);
 void ergebnisAusgeben(int array[], int size);
 
 //Hauptprogramm
@@ -31,6 +32,11 @@ int main () {
   	//Ausgabe
   	printf("Der Array beeinhaltet folgende Inhalte in aufsteigender Reihenfolge: \n");
   	ergebnisAusgeben(bubble, 20);
+	
+	//Sortieren
+  	bubbleSortFlip(bubble, 20); 
+	
+	//Ausgabe
 	printf("Der Array beeinhaltet folgende Inhalte in absteigender Reihenfolge: \n");
   	ergebnisAusgeben(bubble, 20);
 
