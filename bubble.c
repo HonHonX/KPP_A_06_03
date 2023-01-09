@@ -70,10 +70,10 @@ void bubbleSort(int array[], int size) {
 void bubbleSortFlip(int array[], int size) {
   
   //Äußere Schleife
-  for(int i=size; i>0; i--) {
+  for(int i=0; i<size; i++) {
     
     //innere Schleife
-    for(int j=0; j<size-i-1; j++) {
+    for(int j=0; j<size-i; j++) {
       
       //Vergleich zwei nebeneinanderliegender Elemente
       if (array[j] < array[j+1]) {
