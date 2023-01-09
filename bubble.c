@@ -22,8 +22,8 @@ int main () {
   	int bubble[20] = { 0, 5, 4, 11, 14, 8, 5, 4, 3, 2, 48, 12, 47, 1, 66, 45, 23, 98, 13, 41};
   
   	//Ausgabe des unsortierten Arrays zur Kontrolle
- 	//printf("Der Array beeinhaltet folgende Inhalte in ursprünglicher Reihenfolge: \n");
-  	//ergebnisAusgeben(bubble, 20);
+ 	printf("Der Array beeinhaltet folgende Inhalte in ursprünglicher Reihenfolge: \n");
+  	ergebnisAusgeben(bubble, 20);
 
   	//Sortieren
   	bubbleSort(bubble, 20); 
